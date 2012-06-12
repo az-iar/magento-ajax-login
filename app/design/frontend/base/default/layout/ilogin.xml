@@ -1,0 +1,22 @@
+<layout version="0.1.0">
+	<default>
+		<reference name="root">
+			<action method="setTemplate"><template>page/1column.phtml</template></action>
+		</reference>
+		<reference name="content">
+
+		</reference>
+	</default>
+
+	<ilogin_index_index>
+		<reference name="content">
+			<block type="ilogin/login"  name="ilogin.login" template="ilogin/login.phtml" />
+		</reference>
+	</ilogin_index_index>
+	
+	<ilogin_index_registersuccess>
+		<reference name="content">
+			<block type="ilogin/register_success"  name="ilogin.register_success" template="ilogin/registerSuccess.phtml" />
+		</reference>
+	</ilogin_index_registersuccess>
+</layout>

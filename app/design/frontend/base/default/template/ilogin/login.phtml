@@ -1,0 +1,68 @@
+<div class="ilogin">
+	<?php if(!$this->helper('customer')->isLoggedIn()): ?>
+	<form action="<?php echo $this->getUrl('ilogin/index/dologin'); ?>" method="post" class="login-form left">
+		<h2>Already have an account?</h2>
+		<p><a rel="facebook-connect" href="#"><img width="194" src="http://beta.cellnique.com/skin/frontend/default/cellnique/images/fbc_button.png"></a></p>
+		<p>or</p>
+		<p>
+			<label for="email">Email Address</label>
+			<input type="text" name="username" value=""/>
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input type="password" name="password" value=""/>
+		</p>
+		<div class="actions">
+			<a class="right" href="<?php echo $this->helper('customer/data')->getForgotPasswordUrl(); ?>">Forgot Password</a>
+			<p>&nbsp;</p>
+			<p class="left"><input type="checkbox" name="persistent_remember_me" value="yes"/> Remember me</p>
+			<input class="right" type="submit" name="login" value="Login"/>
+		</div>
+	</form>
+	<form action="<?php echo $this->getUrl('ilogin/index/doregister'); ?>" method="post" class="register-form left">
+		<h2>Register - Create a new account</h2>
+		
+		<p>*you should create a new account even you had an existing account with previous site</p>
+		
+		<div class="why-register">
+			<h3>Why register with us?</h3>
+			<ul>
+				<li>Get US$2.00 instanly</li>
+				<li>Start earning <strong>FREE</strong> Beauty Points in 10 simple ways</li>
+				<li><strong>Receive</strong> mystery gift on your birthday!</li>
+				<li>view your order history; create your wishlist and more</li>
+			</ul>
+		</div>
+		
+		<p>Connect with Facebook</p>
+		
+		<p><a href="#" rel="facebook-connect"><img width="194" src="http://beta.cellnique.com/skin/frontend/default/cellnique/images/connect.bmp"></a></p>
+		
+		<p>
+			<label for="email">Email Address</label>
+			<input style="width:200px;" type="text" name="email" value=""/>
+			<span class="hint">Make sure you type it correctly</span>
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input style="width:200px;" type="password" name="password" value=""/>
+			<span class="hint">Make it 6 - 10 characthers, no spaces</span>
+		</p>
+		<p>
+			<input type="submit" name="register" value="Register"/>
+		</p>
+	</form>
+	<div class="clearfix"></div>
+	<?php else: ?>
+	
+	<?php endif; ?>
+</div>
+<style>
+	.ilogin form {padding:20px;}
+	.ilogin form.login-form { width:30%; padding-right:50px;}
+	.ilogin form.register-form { border-left:1px solid #666; padding-left:50px;}
+	
+	.ilogin form.login-form input[type="text"],.ilogin form.login-form input[type="password"] { width:100%; }
+	.ilogin form label{display:block;}
+	.ilogin form span.hint{color:#ccc;}
+</style>

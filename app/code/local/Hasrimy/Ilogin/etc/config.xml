@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Hasrimy_Ilogin>
+			<version>1.0.0</version>
+		</Hasrimy_Ilogin>
+	</modules>
+    <frontend>
+		<routers>
+			<ilogin>
+				<use>standard</use>
+				<args>
+					<module>Hasrimy_Ilogin</module>
+					<frontName>ilogin</frontName>
+				</args>
+			</ilogin>
+		</routers>
+		<layout>
+			<updates>
+				<ilogin>
+					<file>ilogin.xml</file>
+				</ilogin>
+			</updates>
+		</layout>
+    </frontend>
+	<global>
+		<blocks>
+			<ilogin>
+				<class>Hasrimy_Ilogin_Block</class>
+			</ilogin>
+		</blocks>
+	</global>
+</config>
