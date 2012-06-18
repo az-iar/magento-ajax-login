@@ -2,3 +2,5 @@
 =========
 
 Magento ajax login extension for cellnique
+
+** Installation :
