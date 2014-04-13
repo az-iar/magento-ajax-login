@@ -1,4 +1,4 @@
-#ul-ilogin
+# Magento Ajax Login
 =========
 
 Magento ajax login extension for cellnique
