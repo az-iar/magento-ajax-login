@@ -1,7 +1,6 @@
 # Magento Ajax Login
-=========
 
-Magento ajax login extension for cellnique
+Magento ajax login extension
 
 #####Installation :
 
