@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
 	<modules>
-		<Hasrimy_Ilogin>
+		<Inneuron_Ilogin>
 			<active>true</active>
 			<codePool>local</codePool>
-		</Hasrimy_Ilogin>
+		</Inneuron_Ilogin>
 	</modules>
 </config>
