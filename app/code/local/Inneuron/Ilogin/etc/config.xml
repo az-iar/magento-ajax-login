@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
 	<modules>
-		<Hasrimy_Ilogin>
+		<Inneuron_Ilogin>
 			<version>1.0.0</version>
-		</Hasrimy_Ilogin>
+		</Inneuron_Ilogin>
 	</modules>
     <frontend>
 		<routers>
 			<ilogin>
 				<use>standard</use>
 				<args>
-					<module>Hasrimy_Ilogin</module>
+					<module>Inneuron_Ilogin</module>
 					<frontName>ilogin</frontName>
 				</args>
 			</ilogin>
@@ -26,7 +26,7 @@
 	<global>
 		<blocks>
 			<ilogin>
-				<class>Hasrimy_Ilogin_Block</class>
+				<class>Inneuron_Ilogin_Block</class>
 			</ilogin>
 		</blocks>
 	</global>

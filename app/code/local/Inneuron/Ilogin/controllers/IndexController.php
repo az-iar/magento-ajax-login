@@ -1,5 +1,5 @@
 <?php
-class Hasrimy_Ilogin_IndexController extends Mage_Core_Controller_Front_Action {
+class Inneuron_Ilogin_IndexController extends Mage_Core_Controller_Front_Action {
 	
 	public function indexAction (){
 		if (Mage::getSingleton('customer/session')->isLoggedIn()) {
